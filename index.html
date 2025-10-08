@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  " rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>фитнес-клуб</title>
+</head>
+
+<body>
+  <div class="background-modal"></div>
+  <header class="header">
+    <a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a class="select" href="#services">услуги</a></li>
+        <li><a class="select" href="#tariffs">тарифы</a></li>
+        <li><a class="select" href="#about">о нас</a></li>
+        <li><a class="select" href="#sales">акции</a></li>
+        <li><a class="select" href="#question">задать вопрос</a></li>
+      </ul>
+      <img class="menu-burger-button" src="img/button-menu-burger.svg" alt="бургер-меню">
+      <ul class="menu-burger">
+        <li><a class="menu-burger-link" href="#services">услуги</a></li>
+        <li><a class="menu-burger-link" href="#tariffs">тарифы</a></li>
+        <li><a class="menu-burger-link" href="#about">о нас</a></li>
+        <li><a class="menu-burger-link" href="#sales">акции</a></li>
+        <li><a class="menu-burger-link" href="#question">задать вопрос</a></li>
+        <li><a class="button-menu" href="#">купить подписку</a></li>
+        <li class="menu-burger-close">&#215;</li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <a class="top-button button-menu" href="#">купить подписку</a>
+      <a class="target" href="tel:+79007776655">тел: +79007776655</a>
+    </div>
+  </header>
+  <div class="container">
+    <section class="header-top">
+      <h1>Современный фитнес в вашем городе</h1>
+      <a class="header-top__button" href="#">выбери тариф</a>
+    </section>
+  </div>
+
+  <main class="main">
+
+    <div class="container">
+      <section class="services" id="services">
+        <h2>Что мы предлагаем</h2>
+
+        <div class="services__card">
+          <div class="services__card-item">
+            <img class="services__card-img" src="img/services-simulators.jpg" alt="тренажёры">
+            <div class="services__card-description">
+              <h3>Тренажёрный зал</h3>
+              <p>Профессиональные тренажёры примиального класса для мощных тренировок.</p>
+            </div>
+            <button class="services__card-link button-open-modal" data-modal="modal-1"><span>Подробнее</span><img
+                src="img/arrow-right.svg"></button>
+          </div>
+
+          <div class="services__card-item">
+            <img class="services__card-img" src="img/services-training.jpg" alt="тренажёры">
+            <div class="services__card-description">
+              <h3>Групповые тренировки</h3>
+              <p>Занятия по пилатесу, йоге, зумбе, функциональному тренингу, аэробике, танцам и т.д..</p>
+            </div>
+            <button class="services__card-link button-open-modal" data-modal="modal-2"><span>Подробнее</span><img
+                src="img/arrow-right.svg"></з>
+          </div>
+
+          <div class="services__card-item">
+            <img class="services__card-img" src="img/services-pool.jpg" alt="тренажёры">
+            <div class="services__card-description">
+              <h3>Бассейн</h3>
+              <p>Можно заниматься самостоятельно или с инструктором, а также посещать групповые тренировки.</p>
+            </div>
+            <button class="services__card-link button-open-modal" data-modal="modal-3"><span>Подробнее</span><img
+                src="img/arrow-right.svg"></button>
+          </div>
+
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="services__card-item">
+                <img class="services__card-img" src="img/services-simulators.jpg" alt="тренажёры">
+                <div class="services__card-description">
+                  <h3>Тренажёрный зал</h3>
+                  <p>Профессиональные тренажёры примиального класса для мощных тренировок.</p>
+                </div>
+                <button class="services__card-link button-open-modal" data-modal="modal-1"><span>Подробнее</span><img
+                    src="img/arrow-right.svg"></button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services__card-item">
+                <img class="services__card-img" src="img/services-training.jpg" alt="тренажёры">
+                <div class="services__card-description">
+                  <h3>Групповые тренировки</h3>
+                  <p>Занятия по пилатесу, йоге, зумбе, функциональному тренингу, аэробике, танцам и т.д..</p>
+                </div>
+                <button class="services__card-link button-open-modal" data-modal="modal-2"><span>Подробнее</span><img
+                    src="img/arrow-right.svg"></button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services__card-item">
+                <img class="services__card-img" src="img/services-pool.jpg" alt="тренажёры">
+                <div class="services__card-description">
+                  <h3>Бассейн</h3>
+                  <p>Можно заниматься самостоятельно или с инструктором, а также посещать групповые тренировки.</p>
+                </div>
+                <button class="services__card-link button-open-modal" data-modal="modal-3"><span>Подробнее</span><img
+                    src="img/arrow-right.svg"></button>
+              </div>
+            </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!-- modal -->
+
+        <div class="modal" id="modal-1">
+          <span class="button-close-modal">&times;</span>
+          <div class="modal__content">
+            <h3>Тренажёрный зал</h3>
+            <p>Широкий спектр тренажеров и оборудования, позволяющий заниматься всеми видами фитнеса (кардио, силовой,
+              функциональный
+              тренинг и др.)
+              Удобное разделение по зонам и продуманное расположение обеспечивают максимальный комфорт.
+              Тренажерные залы отлично вентилируются, что препятствует возникновению неприятных запахов, а за
+              микроклиматом помещения
+              постоянно следят сотрудники клуба, находиться в зале комфортно и приятно.</p>
+            <a class="button-menu" href="#">купить подписку</a>
+          </div>
+        </div>
+        <div class="modal" id="modal-2">
+          <span class="button-close-modal">&times;</span>
+          <div class="modal__content">
+            <h3>Групповые тренировки</h3>
+            <p>Занятия по пилатесу, йоге, зумбе, функциональному тренингу, аэробике, танцам и тд. От высокоинтенсивных
+              интервальных
+              тренировок до умиротворяющих йоги и пилатеса — у нас проводятся занятия под любые задачи и настроение.
+              Тренеры, ведущие
+              занятия — высококвалифицированные специалисты. Профессионализм, динамичное ведение тренировок, высокий
+              стандарт качества
+              преподаваемых уроков — обязательные критерии при выборе тренеров групповых программ. Наша команда делает
+              все возможное,
+              чтобы каждое занятие было запоминающимся и ярким, чтобы Вы получали максимум эмоций от каждой тренировки!
+            </p>
+            <a class="button-menu" href="#">купить подписку</a>
+          </div>
+        </div>
+        <div class="modal" id="modal-3">
+          <span class="button-close-modal">&times;</span>
+          <div class="modal__content">
+            <h3>Бассейн</h3>
+            <p>Просторная аквазона с дорожками для плавания позволяет комфортно проводить время и поддерживать себя в
+              форме. Побывать
+              в тренажерном зале с бассейном стоит каждому, кто хочет потренироваться в спортклубе недорого и с пользой
+              для тела. На
+              выбор посетителей фитнес центра – множество интересных и полезных программ, которые помогут расслабиться
+              после тяжелой
+              тренировки в спортзале, развить выносливость, ловкость, проработать все группы мышц.</p>
+            <a class="button-menu" href="#">купить подписку</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="tariffs" id="tariffs">
+        <h2>Тарифы</h2>
+        <div class="tariffs__cards">
+          <div class="tariffs__cards-item">
+            <div class="item__header">
+              <h3>Облегчённый</h3>
+              <p><span>1500</span>&#8381;/мес</p>
+            </div>
+
+            <div class="item__points">
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Безлимитный доступ в клуб</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>10 групповых тренировок</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Ознакомительная тренировка</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Посещение бассейна</p>
+              </div>
+              <div class="point">
+                <img src="img/minus.svg" alt="галочка">
+                <p class="inert">Семейный доступ</p>
+              </div>
+              <div class="point">
+                <img src="img/minus.svg" alt="галочка">
+                <p class="inert">Персональная тренировка</p>
+              </div>
+              <div class="point">
+                <img src="img/minus.svg" alt="галочка">
+                <p class="inert">Консультация массажиста</p>
+              </div>
+            </div>
+            <a class="tariffs-button" href="#">купить подписку</a>
+          </div>
+
+          <div class="tariffs__cards-item focus">
+            <div class="item__header">
+              <h3>Стандартный</h3>
+              <p><span>2100</span>&#8381;/мес</p>
+            </div>
+            <div class="item__points">
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Безлимитный доступ в клуб</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>10 групповых тренировок</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Ознакомительная тренировка</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Посещение бассейна</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Семейный доступ</p>
+              </div>
+              <div class="point">
+                <img src="img/minus.svg" alt="галочка">
+                <p class="inert">Персональная тренировка</p>
+              </div>
+              <div class="point">
+                <img src="img/minus.svg" alt="галочка">
+                <p class="inert">Консультация массажиста</p>
+              </div>
+            </div>
+            <a class="tariffs-button button-focus" href="#">купить подписку</a>
+          </div>
+
+          <div class="tariffs__cards-item">
+            <div class="item__header">
+              <h3>Топовый</h3>
+              <p><span>2800</span>&#8381;/мес</p>
+            </div>
+            <div class="item__points">
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Безлимитный доступ в клуб</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>10 групповых тренировок</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Ознакомительная тренировка</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Посещение бассейна</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Семейный доступ</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Персональная тренировка</p>
+              </div>
+              <div class="point">
+                <img src="img/check-mark.svg" alt="галочка">
+                <p>Консультация массажиста</p>
+              </div>
+            </div>
+            <a class="tariffs-button" href="#">купить подписку</a>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="gallery" id="about">
+      <h2>Тренажёрные залы</h2>
+
+      <div id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/gym-1.jpg" alt="гантели">
+            </li>
+            <li class="splide__slide">
+              <img src="img/gym-2.jpg" alt="беговые дорожки">
+            </li>
+            <li class="splide__slide">
+              <img src="img/gym-3.png" alt="силовые тренажёры">
+            </li>
+            <li class="splide__slide">
+              <img src="img/gym-4.jpg" alt="штанги">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="container">
+      <section class="sales" id="sales">
+        <h2>Акции</h2>
+        <div class="sale-cards">
+          <div class="sales__card-1">
+            <h3>Для пенсионеров</h3>
+            <img class="img-sale" src="img/sale-50.png" alt="">
+            <img class="img-person max" src="img/elderly.png" alt="люди">
+            <img class="img-person medium" src="img/elderly-medium.png" alt="люди">
+            <img class="img-person small" src="img/elderly-small.png" alt="люди">
+
+          </div>
+          <div class="sales__card-2">
+            <h3>День Рождения</h3>
+            <img class="img-sale" src="img/sale-70.png" alt="">
+            <img class="img-cake" src="img/cake.svg" alt="торт">
+          </div>
+          <div class="sales__card-3">
+            <h3>Понендельник</h3>
+            <img class="img-sale" src="img/sale-30.png" alt="">
+            <img class="img-calendar" src="img/calendar.svg" alt="календарь">
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="container">
+      <section class="location">
+        <h2>Мы на карте</h2>
+        <div class="map" style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/org/bolshoy_sfinks/217629533120/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Большой Сфинкс</a><a
+            href="https://yandex.ru/maps/121452/giza-governorate/category/landmark_attraction/89683368508/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Достопримечательность в Мухафазе
+            Эль‑Гиза</a><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=31.130393%2C29.976946&mode=search&oid=217629533120&ol=biz&z=15"
+            width="80%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="question-wrapper" id="question">
+        <h2>Остались вопросы?</h2>
+        <form class="question">
+          <label for="name">Ваше имя</label>
+          <input id="name" type="text" placeholder="Иван">
+
+          <label for="mail">Вашa электронная почта</label>
+          <input id="mail" type="email" placeholder="mail@yandex.ru">
+
+          <label for="quest">Задайте ваш вопрос</label>
+          <textarea id="quest" rows="1"></textarea>
+
+          <div class="permit-wrapper">
+            <label class="permit-text" for="permit">Даю согласие на обработку персональных данных</label>
+            <input class="permit-check" id="permit" type="checkbox">
+          </div>
+          <button class="question-button">Отправить</button>
+        </form>
+      </section>
+    </div>
+
+
+  </main>
+
+  <div class="container">
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <div class="footer__wrapper-logo">
+          <a class="footer__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+          <h4 class="footer__slogan">прокачай себя</h4>
+        </div>
+        <div class="footer__menu">
+          <a class="select" href="#">акции</a>
+          <a class="select" href="#">тарифы</a>
+          <a class="select" href="#">услуги</a>
+        </div>
+
+      </nav>
+      <div class="footer__social">
+        <a class="social__link" href="#"><img class="sochial__icon" src="img/facebook.svg"></a>
+        <a class="social__link" href="#"><img class="sochial__icon" src="img/instagramm.svg"></a>
+        <a class="social__link" href="#"><img class="sochial__icon" src="img/telegram.svg"></a>
+        <a class="social__link" href="#"><img class="sochial__icon" src="img/tvitter.svg"></a>
+      </div>
+
+      <div class="footer__side-section">
+        <div class="footer__contact">
+          <a class="target" href="tel:+79007776655">тел: +79007776655</a>
+          <a class="button-menu" href="#">купить подписку</a>
+        </div>
+        <div class="link-rules">
+          <a href="#">Политика конфедициальности</a>
+          <a href="#">Правила и техника безопасности на тренажёрах</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
