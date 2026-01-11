@@ -35,19 +35,19 @@
         <li><a class="menu-burger-link" href="#about">о нас</a></li>
         <li><a class="menu-burger-link" href="#sales">акции</a></li>
         <li><a class="menu-burger-link" href="#question">задать вопрос</a></li>
-        <li><a class="button-menu" href="#">купить подписку</a></li>
+        <li><a class="button-menu" href="subscription.html" target="_blank">купить подписку</a></li>
         <li class="menu-burger-close">&#215;</li>
       </ul>
     </nav>
     <div class="contact">
-      <a class="top-button button-menu" href="#">купить подписку</a>
+      <a class="top-button button-menu" href="subscription.html" target="_blank">купить подписку</a>
       <a class="target" href="tel:+79007776655">тел: +79007776655</a>
     </div>
   </header>
   <div class="container">
     <section class="header-top">
       <h1>Современный фитнес в вашем городе</h1>
-      <a class="header-top__button" href="#">выбери тариф</a>
+      <a class="header-top__button" href="#tariffs">выбери тариф</a>
     </section>
   </div>
 
@@ -154,7 +154,7 @@
               Тренажерные залы отлично вентилируются, что препятствует возникновению неприятных запахов, а за
               микроклиматом помещения
               постоянно следят сотрудники клуба, находиться в зале комфортно и приятно.</p>
-            <a class="button-menu" href="#">купить подписку</a>
+            <a class="button-menu" href="subscription.html" target="_blank">купить подписку</a>
           </div>
         </div>
         <div class="modal" id="modal-2">
@@ -171,7 +171,7 @@
               все возможное,
               чтобы каждое занятие было запоминающимся и ярким, чтобы Вы получали максимум эмоций от каждой тренировки!
             </p>
-            <a class="button-menu" href="#">купить подписку</a>
+            <a class="button-menu" href="subscription.html" target="_blank">купить подписку</a>
           </div>
         </div>
         <div class="modal" id="modal-3">
@@ -185,7 +185,7 @@
               выбор посетителей фитнес центра – множество интересных и полезных программ, которые помогут расслабиться
               после тяжелой
               тренировки в спортзале, развить выносливость, ловкость, проработать все группы мышц.</p>
-            <a class="button-menu" href="#">купить подписку</a>
+            <a class="button-menu" href="subscription.html" target="_blank">купить подписку</a>
           </div>
         </div>
       </section>
@@ -231,7 +231,7 @@
                 <p class="inert">Консультация массажиста</p>
               </div>
             </div>
-            <a class="tariffs-button" href="#">купить подписку</a>
+            <a class="tariffs-button" href="subscription.html" target="_blank">купить подписку</a>
           </div>
 
           <div class="tariffs__cards-item focus">
@@ -269,7 +269,7 @@
                 <p class="inert">Консультация массажиста</p>
               </div>
             </div>
-            <a class="tariffs-button button-focus" href="#">купить подписку</a>
+            <a class="tariffs-button button-focus" href="subscription.html" target="_blank">купить подписку</a>
           </div>
 
           <div class="tariffs__cards-item">
@@ -307,7 +307,7 @@
                 <p>Консультация массажиста</p>
               </div>
             </div>
-            <a class="tariffs-button" href="#">купить подписку</a>
+            <a class="tariffs-button" href="subscription.html" target="_blank">купить подписку</a>
 
           </div>
         </div>
@@ -380,23 +380,28 @@
     </div>
 
     <div class="container">
-      <section class="question-wrapper" id="question">
+      <section class="question-wrapper" id="question" >
         <h2>Остались вопросы?</h2>
-        <form class="question">
+        <form class="question uniForm">
+
+          <input type="hidden" name="project_name" value="Фитнес">
+          <input type="hidden" name="admin_email" value="agarkowigor@yandex.ru">
+          <input type="hidden" name="form_subject" value="Вопрос">
+
           <label for="name">Ваше имя</label>
-          <input id="name" type="text" placeholder="Иван">
+          <input id="name" type="text" placeholder="Иван" required>
 
           <label for="mail">Вашa электронная почта</label>
-          <input id="mail" type="email" placeholder="mail@yandex.ru">
+          <input id="mail" type="email" placeholder="mail@yandex.ru" required>
 
           <label for="quest">Задайте ваш вопрос</label>
           <textarea id="quest" rows="1"></textarea>
 
           <div class="permit-wrapper">
             <label class="permit-text" for="permit">Даю согласие на обработку персональных данных</label>
-            <input class="permit-check" id="permit" type="checkbox">
+            <input class="permit-check" id="permit" type="checkbox" required>
           </div>
-          <button class="question-button">Отправить</button>
+          <button class="question-button" type='submit'>Отправить</button>
         </form>
       </section>
     </div>
@@ -428,7 +433,7 @@
       <div class="footer__side-section">
         <div class="footer__contact">
           <a class="target" href="tel:+79007776655">тел: +79007776655</a>
-          <a class="button-menu" href="#">купить подписку</a>
+          <a class="button-menu" href="subscription.html" target="_blank">купить подписку</a>
         </div>
         <div class="link-rules">
           <a href="#">Политика конфедициальности</a>

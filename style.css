@@ -617,6 +617,11 @@ button {
   resize: none;
 }
 
+input,
+textarea {
+  font-size: 24px;
+}
+
 .permit-wrapper {
   width: 100%;
   margin-top: 30px;
